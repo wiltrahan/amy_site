@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $main-orange: #f05f40;
+$background-gray: #EBEBEB;
 
 #blog-nav {
   background-color: black;
@@ -23,7 +24,7 @@ $main-orange: #f05f40;
     font-weight: 700;
   }
   p {
-    color: red;
+
     margin-top: -75px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.7);
@@ -31,6 +32,31 @@ $main-orange: #f05f40;
 }
 hr {
     max-width: 50px;
-    border-color: $main-orange;
+    border-color: #919191;
     border-width: 5px;
+}
+#blog-show {
+    margin-top: 100px;
+}
+body#single-blog-post{
+  background-color: $background-gray;
+}
+.show-button {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    border-color: #f05f40;
+    color: #F0F0F0;
+    background-color: $main-orange;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+#more-button {
+  margin-top: 45px;
+}
+body#all-posts {
+  background-color: $background-gray;
 }
