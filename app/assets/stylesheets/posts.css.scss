@@ -82,3 +82,11 @@ body#all-posts {
 .blog-title {
   font-family: 'Cabin', sans-serif;
 }
+
+.admin-button {
+  background-color: $paper;
+  color: $charcoal;
+  border: none;
+  margin-top: 20px;
+  margin-left: 250px;
+}

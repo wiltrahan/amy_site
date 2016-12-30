@@ -22,7 +22,13 @@
        <div class="text-center">
         <%= link_to "READ MORE", post_path(post), class: "btn btn-default btn-xl show-button", id: "more-button" %>
       </div>
-        <!-- hold shit goes here -->
+
+        <div class="tex-center">
+        <% if admin_signed_in? %>
+        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default admin-button" %>
+        <%= link_to "Delete", post_path(post), class: "btn btn-danger admin-button", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
+      </div>
       <hr>
     </div>
     <% end %>
