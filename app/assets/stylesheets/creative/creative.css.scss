@@ -4,6 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
 html,
 body {
     width: 100%;
@@ -16,7 +19,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: $silk;
     border-width: 3px;
 }
 
@@ -25,7 +28,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: $charcoal;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -52,16 +55,17 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: $silk;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: $silk;
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    // color: rgba(255,255,255,.7);
+    color: $paper;
 }
 
 section {
@@ -89,7 +93,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: $teal;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -107,12 +111,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: $teal;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: $teal!important;
     background-color: transparent;
 }
 
@@ -153,12 +157,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: $teal;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: $teal;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -168,7 +172,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: $teal;
     }
 }
 
@@ -274,7 +278,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(7,136,155,.7);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -323,7 +327,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: $teal;
 }
 
 .no-gutter > [class*=col-] {
@@ -333,7 +337,7 @@ header .header-content .header-content-inner p {
 
 .btn-default {
     border-color: #fff;
-    color: #222;
+    color: $charcoal;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -347,8 +351,8 @@ header .header-content .header-content-inner p {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
     border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
+    color: $silk;
+    background-color: $teal;
 }
 
 .btn-default:active,
@@ -386,8 +390,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
     border-color: #f05f40;
-    color: #fff;
-    background-color: #f05f40;
+    color: $paper;
+    background-color: $charcoal;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -400,8 +404,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
-    color: #fff;
-    background-color: #ee4b28;
+    color: $silk;
+    background-color: $teal;
 }
 
 .btn-primary:active,
@@ -457,7 +461,7 @@ fieldset[disabled] .btn-primary.active {
 
 ::selection {
     text-shadow: none;
-    color: #fff;
+    color: $teal;
     background: #222;
 }
 
@@ -480,3 +484,7 @@ body {
 }
 
 
+#main-title {
+    font-family: 'Arvo', sans-serif;
+    color: $silk;
+}

@@ -2,44 +2,62 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$main-orange: #f05f40;
-$background-gray: #EBEBEB;
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Arvo');
 
 #blog-nav {
-  background-color: black;
+  background-color: $silk;
+  border-bottom: 1px solid $pale-gold;
+
+  .navbar-brand {
+    color: $teal;
+  }
 }
 
-#blog-head{
 
-  background-image: asset-data-url("creative/amy_lift.jpg");
+#blog-head{
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+  asset-data-url("creative/amy_lift.jpg");
   background-size: contain;
   background-size: cover;
   height: 530px;
   text-align: center;
+  border-bottom: 4px groove $pale-gold;
 
   h1{
-    color: white;
+    // color: $paper;
     padding: 95px;
     text-transform: uppercase;
-    font-weight: 700;
+    // font-weight: 700;
+    // font-family: 'Cabin', sans-serif;
+    text-shadow: 0 2px 0 $charcoal;
+    font-family: 'Arvo', sans-serif;
+    color: $silk;
+
   }
   p {
 
     margin-top: -75px;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.7);
+    color: $silk;
   }
 }
+
 hr {
     max-width: 50px;
-    border-color: #919191;
+    border-color: $charcoal;
     border-width: 5px;
 }
 #blog-show {
     margin-top: 100px;
+    border: 2px solid $charcoal;
 }
 body#single-blog-post{
-  background-color: $background-gray;
+  background-color: $silk;
+
 }
 .show-button {
     border: 0;
@@ -49,14 +67,18 @@ body#single-blog-post{
     font-weight: 700;
     border-color: #f05f40;
     color: #F0F0F0;
-    background-color: $main-orange;
+    background-color: $charcoal;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    margin-top: 25px;
 }
 #more-button {
   margin-top: 45px;
 }
 body#all-posts {
-  background-color: $background-gray;
+  background-color: $silk;
+}
+.blog-title {
+  font-family: 'Cabin', sans-serif;
 }
