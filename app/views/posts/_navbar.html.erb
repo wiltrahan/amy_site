@@ -21,6 +21,15 @@
                 <li> <%= link_to "Services", root_path %> </li>
                 <li> <%= link_to "Portfolio", root_path %> </li>
                 <li> <%= link_to "Contact", root_path %> </li>
+                 <% if admin_signed_in? %>
+                    <!--This block is only visible to signed in admins -->
+                <li><%= link_to 'New Post', new_post_path %></li>
+                <li><%= link_to 'My Account', edit_admin_registration_path  %></li>
+                <li><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
+                <!-- The block ends here -->
+        <% else %>
+          <li><%= link_to 'Login', new_admin_session_path  %></li>
+        <% end %>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
