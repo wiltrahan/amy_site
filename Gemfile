@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'ckeditor', '~> 4.2', '>= 4.2.2'
 gem 'devise', '~> 4.2'
+gem 'carrierwave'
+gem 'mini_magick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
