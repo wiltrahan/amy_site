@@ -4,9 +4,16 @@
 
 @import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans:400,600');
 
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 #blog-nav {
-  background-color: $silk;
+  background-color: $paper;
   border-bottom: 1px solid $pale-gold;
 
   .navbar-brand {
@@ -26,6 +33,7 @@
   height: 530px;
   text-align: center;
   border-bottom: 4px groove $pale-gold;
+
 
   h1{
     // color: $paper;
@@ -54,9 +62,11 @@ hr {
 #blog-show {
     margin-top: 100px;
     border: 2px solid $charcoal;
+    border-radius: 5px;
 }
 body#single-blog-post{
-  background-color: $silk;
+  background-color: $paper;
+
 
 }
 .show-button {
@@ -77,10 +87,12 @@ body#single-blog-post{
   margin-top: 45px;
 }
 body#all-posts {
-  background-color: $silk;
+  background-color: $paper;
+
 }
 .blog-title {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Cardo', serif;
+  text-transform: uppercase;
 }
 
 .admin-button {
@@ -89,4 +101,22 @@ body#all-posts {
   border: none;
   margin-top: 20px;
   margin-left: 250px;
+}
+
+.blog-text {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.blog-text-index {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+
+
+#blog-image {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 2px solid $charcoal;
+  border-radius: 5px;
 }

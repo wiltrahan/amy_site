@@ -1,13 +1,12 @@
 <%= render 'navbar' %>
 
-
 <body id="single-blog-post">
 <div class="container">
   <div class="col-sm-11 col-xs-12 blog-content" id="blog-show">
 
-    <h2 class="text-center"><%= @post.title %></h2>
-    <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-    <div><%= raw @post.body %></div>
+    <h2 class="text-center blog-title"><%= @post.title %></h2>
+    <h5 class="text-center blog-text"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+    <div class="blog-text"><%= raw @post.body %></div>
 
   </div>
       <%= link_to "All Posts", posts_path , class: "btn btn-default btn-xl show-button" %>
@@ -15,3 +14,7 @@
 </div>
 
 </body>
+
+
+
+<%= render 'footer' %>

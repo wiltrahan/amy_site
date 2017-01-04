@@ -19,13 +19,14 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: $silk;
+    border-color: $charcoal;
     border-width: 3px;
 }
 
 hr.light {
-    border-color: #fff;
+    border-color: $charcoal;
 }
+
 
 a {
     color: $charcoal;
@@ -65,7 +66,7 @@ p {
 
 .text-faded {
     // color: rgba(255,255,255,.7);
-    color: $paper;
+    color: $charcoal;
 }
 
 section {
@@ -487,4 +488,20 @@ body {
 #main-title {
     font-family: 'Arvo', sans-serif;
     color: $silk;
+}
+#heading-title {
+    color: $charcoal;
+}
+#call-action{
+    color: $charcoal;
+}
+#my-foot {
+    background-color: #EDEDED;
+
+
+    p {
+        font-size: 0.75em;
+        padding-top: 15px;
+        text-align: left;
+    }
 }
