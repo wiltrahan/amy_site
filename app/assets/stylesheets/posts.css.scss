@@ -14,7 +14,7 @@ body {
 }
 #blog-nav {
   background-color: $paper;
-  border-bottom: 1px solid $pale-gold;
+  border-bottom: 2px solid $magenta;
 
   .navbar-brand {
     color: $teal;
@@ -32,18 +32,18 @@ body {
   background-size: cover;
   height: 530px;
   text-align: center;
-  border-bottom: 4px groove $pale-gold;
+  border-bottom: 4px groove $magenta;
 
 
   h1{
     // color: $paper;
-    padding: 95px;
+    padding: 145px;
     text-transform: uppercase;
     // font-weight: 700;
     // font-family: 'Cabin', sans-serif;
-    text-shadow: 0 2px 0 $charcoal;
+    text-shadow: 1px 1px 0 $magenta;
     font-family: 'Arvo', sans-serif;
-    color: $silk;
+    color: $teal;
 
   }
   p {
@@ -56,12 +56,12 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: $charcoal;
+    border-color: $magenta;
     border-width: 5px;
 }
 #blog-show {
     margin-top: 100px;
-    border: 2px solid $charcoal;
+    // border: 1px groove $bYellow;
     border-radius: 5px;
 }
 body#single-blog-post{
@@ -111,8 +111,6 @@ body#all-posts {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.25em;
 }
-
-
 
 #blog-image {
   margin-top: 30px;
