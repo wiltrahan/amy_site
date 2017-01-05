@@ -57,7 +57,7 @@ body {
 hr {
     max-width: 50px;
     border-color: $magenta;
-    border-width: 5px;
+    border-width: 3px;
 }
 #blog-show {
     margin-top: 100px;
@@ -117,4 +117,9 @@ body#all-posts {
   margin-bottom: 10px;
   border: 2px solid $charcoal;
   border-radius: 5px;
+}
+
+.show-buttons {
+  margin-left: 170px;
+  margin-bottom: 40px;
 }
